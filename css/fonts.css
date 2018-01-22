@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'cinzelregular';
+  src: url('../fonts/cinzel-regular-webfont.woff2') format('woff2'),
+       url('../fonts/cinzel-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans.woff2') format('woff2'),
+       url('../fonts/opensans.woff2') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../fonts/merriweather-light-webfont.woff2') format('woff2'),
+  url('../fonts/merriweather-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
