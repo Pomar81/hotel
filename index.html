@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,6 @@
     <title>final project Hotel</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -19,12 +18,9 @@
             <a class="page-header__logo c-link"><img class="logo__img image-fluid" src="img/logo_new.png"
                                                      alt="royal hotel"
                                                      width="242" height="66"></a>
-
-
             <input type="checkbox" id="page-burger" class="c-menu__burger-toggle">
             <label for="page-burger" class="c-menu__burger-btn"></label>
             <ul class="menu__list">
-                <li class="c-menu__item"><a class="c-link" href="#">Home</a></li>
                 <li class="c-menu__item"><a class="c-link" href="#">Explore</a></li>
                 <li class="c-menu__item"><a class="c-link c-menu__btn" href="#">Rooms</a>
                     <ul class="c-menu-dropdown page_style">
@@ -34,7 +30,7 @@
                 </li>
                 <li class="c-menu__item"><a class="c-link" href="#">Booking</a></li>
                 <li class="c-menu__item"><a class="c-link" href="#">News</a></li>
-                <li class="c-menu__item"><a class="c-link" href="#">Gallery</a></li>
+                <li class="c-menu__item"><a class="c-link" href="gallery.html">Gallery</a></li>
                 <li class="c-menu__item"><a class="c-link" href="#">Contact</a></li>
             </ul>
         </nav>
@@ -42,34 +38,44 @@
 </header>
 <main class="page__inner">
     <section class="promo-slider">
-        <div class="c-slider">
-            <div class="container-fluid c-slider__inner">
-                <div class="c-slider__item c-slide">
-                    <b class="c-slide__title">Slide1-header</b>
-                    <p class="c-slide__text">Slide1-text</p>
-                    <img class="c-slide__img" src="" alt="slide img1">
+        <div class="slider">
+            <div class="container-fluid slider__inner">
+                <div class="slider__item">
+                    <img class="image-fluid" src="img/slider_img1.jpg" width="1600" height="620">
+                    <div class="desc">
+                        <b class="desc__lead">Stay with us</b>
+                        <b class="desc__lead-main">Feel like home</b>
+                        <p class="desc__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            aspernatur at corporis cum, dolorum enim eos eveniet molestiae mollitia necessitatibus
+                            officia praesentium provident quia tempora totam veniam vitae voluptates voluptatum.
+                        </p>
+                    </div>
                 </div>
-                <div class="c-slider__item c-slide">
-                    <b class="c-slide__title">Slide2-header</b>
-                    <p class="c-slide__text">Slide2-text</p>
-                    <img class="c-slide__img" src="" alt="slide img2">
-                </div>
-                <div class="c-slider__item c-slide">
-                    <b class="c-slide__title">Slide3-header</b>
-                    <p class="c-slide__text">Slide3-text</p>
-                    <img class="c-slide__img" src="" alt="slide img2">
+                <div class="slider__item">
+                    <img class="image-fluid" src="img/slider_img2.jpg" width="1600" height="620">
+                    <div class="desc">
+                        <b class="desc__lead">The best value</b>
+                        <b class="desc__lead-main">Under the sun</b>
+                        <p class="desc__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            aspernatur at corporis cum, dolorum enim eos eveniet molestiae mollitia necessitatibus
+                            officia praesentium provident quia tempora totam veniam vitae voluptates voluptatum.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="room-overview">
-        <div class="gallery">
-            <div class="gallery-inner">
-                <div class="gallery__item card">
+        <div class="gallery slider">
+            <div class="gallery-inner slider__inner">
+                <div class="gallery__item card slider__item">
                     <div class="card__item">
                         <div class="card__img">
                             <img class="image-fluid" src="img/room1.jpg" alt="Delux room">
                         </div>
+
                         <div class="card__desc">
                             <h2 class="card__title">Deluxe room</h2>
                             <p class="card__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -84,10 +90,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery__item card">
+                <div class="gallery__item card slider__item">
                     <div class="card__item">
                         <div class="card__img ">
-                            <img class="image-fluid" src="img/room1.jpg" alt="Delux room">
+                            <img class="image-fluid" src="img/room2.jpg" alt="Delux room">
                         </div>
                         <div class="card__desc">
                             <h2 class="card__title">Deluxe room</h2>
@@ -98,15 +104,15 @@
                                 rem,
                                 similique tempora ut voluptas
                             </p>
-                            <span class="price">$199<span class="price__count">/Night</span></span>
+                            <span class="price">$299<span class="price__count">/Night</span></span>
                             <a class="c-link c-link__btn" href="#">View details</a>
                         </div>
                     </div>
                 </div>
-                <div class="gallery__item card">
+                <div class="gallery__item card slider__item">
                     <div class="card__item">
                         <div class="card__img">
-                            <img class="image-fluid" src="img/room1.jpg" alt="Delux room">
+                            <img class="image-fluid" src="img/room3.jpg" alt="Delux room">
                         </div>
                         <div class="card__desc">
                             <h2 class="card__title">Deluxe room</h2>
@@ -117,15 +123,15 @@
                                 rem,
                                 similique tempora ut voluptas
                             </p>
-                            <span class="price">$199<span class="price__count">/Night</span></span>
+                            <span class="price">$399<span class="price__count">/Night</span></span>
                             <a class="c-link c-link__btn" href="#">View details</a>
                         </div>
                     </div>
                 </div>
-                <div class="gallery__item card">
+                <div class="gallery__item card slider__item">
                     <div class="card__item">
                         <div class="card__img">
-                            <img class="image-fluid" src="img/room1.jpg" alt="Delux room">
+                            <img class="image-fluid" src="img/room4.jpg" alt="Delux room">
                         </div>
                         <div class="card__desc">
                             <h2 class="card__title">Deluxe room</h2>
@@ -136,15 +142,15 @@
                                 rem,
                                 similique tempora ut voluptas
                             </p>
-                            <span class="price">$199<span class="price__count">/Night</span></span>
+                            <span class="price">$499<span class="price__count">/Night</span></span>
                             <a class="c-link c-link__btn" href="#">View details</a>
                         </div>
                     </div>
                 </div>
-                <div class="gallery__item card">
+                <div class="gallery__item card slider__item">
                     <div class="card__item">
                         <div class="card__img">
-                            <img class="image-fluid" src="img/room1.jpg" alt="Delux room">
+                            <img class="image-fluid" src="img/room5.jpg" alt="Delux room">
                         </div>
                         <div class="card__desc">
                             <h2 class="card__title">Deluxe room</h2>
@@ -155,7 +161,7 @@
                                 rem,
                                 similique tempora ut voluptas
                             </p>
-                            <span class="price">$199<span class="price__count">/Night</span></span>
+                            <span class="price">$599<span class="price__count">/Night</span></span>
                             <a class="c-link c-link__btn" href="#">View details</a>
                         </div>
                     </div>
@@ -166,8 +172,9 @@
 
     </section>
     <section class="features container">
-        <div class="features__item card">
-            <div class="card__item">
+
+        <div class="card">
+            <div class="card__item icon-dropbox">
                 <div class="card__desc">
                     <h2 class="card__title">Room services</h2>
                     <p class="card__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
@@ -177,7 +184,7 @@
                 </div>
             </div>
         </div>
-        <div class="features__item card">
+        <div class="card">
 
             <div class="card__item">
                 <div class="card__desc">
@@ -189,8 +196,7 @@
                 </div>
             </div>
         </div>
-        <div class="features__item card">
-
+        <div class="card">
             <div class="card__item">
                 <div class="card__desc">
                     <h2 class="card__title">Free coffee</h2>
@@ -201,7 +207,7 @@
                 </div>
             </div>
         </div>
-        <div class="features__item card">
+        <div class="card">
             <div class="card__item">
                 <div class="card__desc">
                     <h2 class="card__title">Free deposite</h2>
@@ -215,36 +221,58 @@
         </div>
     </section>
     <section class="response">
-        <div class="response__inner">
-            <div class="response__item">
-                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, cumque, obcaecati.
-                    Accusamus, ducimus est ex explicabo, harum inventore laborum, libero nulla reiciendis rem
-                    reprehenderit sit vitae. Libero, quis, tenetur! Ad.
-                </blockquote>
-                <cite>Sandra Bullock</cite>
+        <div class="response-text">
+            <div class="slider">
+                <div class="slider__inner">
+                    <div class="slider__item">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, cumque,
+                            obcaecati.
+                            Accusamus, ducimus est ex explicabo, harum inventore laborum, libero nulla reiciendis rem
+                            reprehenderit sit vitae. Libero, quis, tenetur! Ad.
+                        </blockquote>
+                        <cite>Sandra Bullock</cite>
+                    </div>
+                    <div class="slider__item">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, cumque,
+                            obcaecati.
+                            Accusamus, ducimus est ex explicabo, harum inventore laborum, libero nulla reiciendis rem
+                            reprehenderit sit vitae. Libero, quis, tenetur! Ad.
+                        </blockquote>
+                        <cite>Sandra Bullock</cite>
+                    </div>
+                    <div class="slider__item">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, cumque,
+                            obcaecati.
+                            Accusamus, ducimus est ex explicabo, harum inventore laborum, libero nulla reiciendis rem
+                            reprehenderit sit vitae. Libero, quis, tenetur! Ad.
+                        </blockquote>
+                        <cite>Shon Pen</cite>
+                    </div>
+                </div>
             </div>
-            <div class="response__item"></div>
         </div>
+        <div class="response-image"></div>
     </section>
+
     <div class="link-bar">
-        <a class="link-bar__link c-link" href="#">Make your reservation</a>
+        <a class="c-link c-link__btn c-link__btn_lg" href="#">Make your reservation</a>
     </div>
 
 </main>
 <footer class="page-footer">
-    <div class="page-footer__inner">
-        <div class="page-footer__about">
-            <h2>About us</h2>
+    <div class="page-footer__inner container">
+        <div class="page-footer__col_1_3 footer-aboutUs">
+            <h3>About us</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet deleniti ex, magnam
                 necessitatibus nulla qui? Assumenda deleniti impedit in labore minus nesciunt sunt, totam velit vero
                 vitae
                 voluptates.</p>
         </div>
-        <div class="page-footer__news">
-            <h2>Latest news</h2>
+        <div class="page-footer__col_1_3 footer-news">
+            <h3>Latest news</h3>
             <ul class="news-list">
                 <li class="news-list__item news">
-                    <h3 class="news__header">Lorem ipsum sit amet</h3>
+                    <h4 class="news__header">Lorem ipsum sit amet</h4>
                     <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur
                         distinctio enim eos
                         fugiat illo ipsa natus nesciunt nihil perferendis placeat, repudiandae unde ut! Ab consectetur
@@ -253,7 +281,7 @@
                             class="news__month">dec</span></time>
                 </li>
                 <li class="news-list__item news">
-                    <h3 class="news__header">Lorem ipsum sit amet</h3>
+                    <h4 class="news__header">Lorem ipsum sit amet</h4>
                     <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur
                         distinctio enim eos
                         fugiat illo ipsa natus nesciunt nihil perferendis placeat, repudiandae unde ut! Ab consectetur
@@ -263,19 +291,26 @@
                 </li>
             </ul>
         </div>
-        <div class="page-footer__address">
-            <h2>Our address</h2>
+        <div class="page-footer__col_1_3 footer-address">
+            <h3>Our address</h3>
             <p>Addr: 20a P.Zaporozhets<br>
                 Phone: +38(098)2465483<br>
                 Fax: +38(098)2465483<br>
-                Mail: <a href="mailto:pomarsa81@gmail.com">pomarsa81@gmail.com</a><br>
-                Web: <a href="https://pomar81.github.io/">http://pomar81.gitgub.io</a>
+                Email: <a href="mailto:pomarsa81@gmail.com">pomarsa81@gmail.com</a><br>
+                Web: <a href="https://pomar81.github.io/">http://pomar81.github.io</a>
             </p>
-            <div class="social-nw"></div>
+            <div class="social-nw">
+                <a href="#" class="social facebook">facebook</a>
+                <a href="#" class="social twitter">twitter</a>
+                <a href="#" class="social blogger">blogger</a>
+            </div>
         </div>
     </div>
+
 </footer>
 <script src="js/menu.js"></script>
-<script src="js/main.js"></script>
+<script src="js/grabSlider.js"></script>
+<script src="js/autoSlider.js"></script>
+<script src="js/p-index.js"></script>
 </body>
 </html>
