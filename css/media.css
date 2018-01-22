@@ -1,0 +1,131 @@
+@media screen and (max-width: 1024px) {
+  .page-header__logo.c-link {
+    margin-right: 0;
+  }
+  .page-header__nav{
+    justify-content: center;
+  }
+  /***** MAIN *****************/
+  .room-overview .gallery__item {
+    flex: 50% 0 0;
+  }
+ 
+}
+
+@media screen and (max-width: 784px) {
+
+  /*************************************/
+  /*           page header             */
+  /************************************/
+
+  .page-header {
+    padding-bottom: 0;
+  }
+
+  .page-header__logo {
+    align-self: flex-start;
+
+  }
+
+
+  .page-header__nav{
+    flex-flow: column nowrap;
+
+    border: none;
+  }
+
+  /*    page menu  styles  */
+
+  .c-menu {
+    padding-bottom: 10px;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    align-self: flex-start;
+    display: none;
+    overflow: hidden;
+
+  }
+
+  .c-menu__item {
+    border-left: 2px solid gray;
+  }
+
+
+
+  .c-menu__burger-toggle:checked ~ .menu__list {
+    /*max-height: 400px;*/
+    display: block;
+  }
+
+
+
+  .c-menu__burger-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px 10px;
+    margin-right: 10px;
+    align-self: flex-start;
+
+    background-color: burlywood ;
+    text-align: center;
+    overflow: hidden;
+    font-size: 0;
+
+  }
+
+  .c-menu__burger-btn::after {
+    content: " ";
+    display:block;
+    width: 32px;
+    height: 32px;
+
+    background: url("../img/sprite.svg")  -65px 0  no-repeat;
+  }
+  .c-menu__burger-toggle:checked + .c-menu__burger-btn::after {
+    background: url("../img/sprite.svg")  0 0  no-repeat;
+  }
+
+  .c-menu-dropdown {
+    position: static;
+
+    padding-left: 30px;
+  }
+
+  /***** MAIN *****************/
+
+  .room-overview .gallery__item {
+    flex: 100% 0 0;
+  }
+  .room-overview .image-fluid {
+    width: 100%;
+  }
+
+  .features .card {
+    flex: 100% 0 0 ;
+  }
+
+  .response-image{
+    display: none;
+  }
+
+  .response-text {
+    flex: 0  0 100%;
+  }
+  .response .slider {
+    flex: 100% 0 0;
+  }
+
+
+  .footer-news {
+    display: none;
+  }
+  .page-footer__col_1_3 {
+    flex: 0 0 50%;
+  }
+}
