@@ -115,6 +115,7 @@
 
   .response {
     display: block;
+    width: 100%;
   }
 
   .response-image{
