@@ -115,11 +115,15 @@
 
 
 
-  .response-image{
+  .response-image {
     display: none;
   }
-  .response-text{
+  .response-text {
     width: 100%;
+  }
+
+  .response-text blockquote{
+    font-size: 14px;
   }
 
 
@@ -128,11 +132,13 @@
   }
 
 
+
   .footer-news {
     display: none;
   }
   .page-footer__col_1_3 {
     width: 50%;
     flex: none;
+    font-size: 13px;
   }
 }
