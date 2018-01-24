@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hotel gallery</title>
+    <title>hotel contacts</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,11 +14,9 @@
     <div class="page-header__inner">
         <nav class="page-header__nav c-menu page_style">
 
-            <a class="page-header__logo c-link" href="index.html"><img class="logo__img image-fluid" src="img/logo_new.png"
-                                                     alt="royal hotel"
-                                                     width="242" height="66"></a>
-
-
+            <a class="page-header__logo c-link" href="index.html">
+                <img class="logo__img image-fluid" src="img/logo_new.png" alt="royal hotel" width="242" height="66">
+            </a>
             <input type="checkbox" id="page-burger" class="c-menu__burger-toggle">
             <label for="page-burger" class="c-menu__burger-btn"></label>
             <ul class="menu__list">
@@ -31,18 +29,17 @@
                 </li>
                 <li class="c-menu__item"><a class="c-link" href="#">Booking</a></li>
                 <li class="c-menu__item"><a class="c-link" href="#">News</a></li>
-                <li class="c-menu__item"><a class="c-link s-active">Gallery</a></li>
-                <li class="c-menu__item"><a class="c-link" href="contacts.html">Contacts</a></li>
+                <li class="c-menu__item"><a class="c-link" href="gallery.html">Gallery</a></li>
+                <li class="c-menu__item"><a class="c-link s-active">Contacts</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <main class="page__inner">
-    <div class="promo">
-        <h1>Gallery</h1>
+    <div class="promo contacts">
+        <h1>Contacts</h1>
     </div>
-
-    <section class="img-gallery container"></section>
+    <div id="map"></div>
 </main>
 <footer class="page-footer">
     <div class="page-footer__inner container">
@@ -94,7 +91,9 @@
 
 </footer>
 <script src="js/menu.js"></script>
-<script src="js/imgGallery.js"></script>
-<script src="js/p-gallery.js"></script>
+<script src="js/map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS1SSQDXm2-2ozSKG2dqFLKZh_T-_d7tM&callback=initMap">
+</script>
 </body>
 </html>

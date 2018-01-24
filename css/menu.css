@@ -1,0 +1,73 @@
+/*menu  styles*/
+.c-menu {
+    font: 16px Sans-serif;
+}
+
+.menu__list{
+    padding-left: 0;
+}
+
+.c-menu__item,
+.c-menu-dropdown__item {
+    /*width: 100%;*/
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    line-height: 2;
+}
+
+.c-menu-dropdown__item {
+    white-space: nowrap;
+}
+
+.c-menu__item:hover,
+.c-menu-dropdown__item:hover {
+    background-color: inherit;
+    color: white;
+}
+
+.c-menu-dropdown {
+    display: none;
+    position: absolute;
+    color: black;
+    left: 0;
+    /*top: 2em;*/
+    min-width: 150px;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+}
+
+
+
+
+.c-menu__link, .c-menu__btn {
+    display: block;
+    text-decoration: none;
+    padding: 0 1.5em;
+    color: inherit;
+
+}
+
+.c-menu__btn {
+    background-color: inherit;
+    border: none;
+    font: inherit;
+}
+
+.c-menu__item + .c-menu__item {
+    border-left: 2px solid gray;
+}
+
+.c-menu-dropdown:focus {
+    display: block;
+}
+
+
+.s-visible {
+    display: block;
+}
+
+s-active {
+    color: inherit;
+}
