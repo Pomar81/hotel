@@ -1,0 +1,32 @@
+[
+  {
+    "img": "img/room1.jpg",
+    "title": "room1",
+    "date" :"28-05-2017",
+    "group": "rooms"
+  },
+  {
+    "img": "img/room2.jpg",
+    "title": "room2",
+    "date" :"28-05-2017",
+    "group": "rooms"
+  },
+{
+    "img": "img/room3.jpg",
+    "title": "room3",
+    "date" :"28-05-2017",
+    "group": "rooms"
+  },
+{
+    "img": "img/room4.jpg",
+    "title": "room4",
+    "date" :"28-05-2017",
+    "group": "rooms"
+  },
+{
+    "img": "img/room5.jpg",
+    "title": "room5",
+    "date" :"28-05-2017",
+    "group": "rooms"
+  }
+]
