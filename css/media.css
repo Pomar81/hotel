@@ -113,13 +113,13 @@
     flex: 100% 0 0 ;
   }
 
-  .response {
-    display: block;
-    width: 100%;
-  }
+
 
   .response-image{
     display: none;
+  }
+  .response-text{
+    width: 100%;
   }
 
 
