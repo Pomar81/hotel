@@ -113,13 +113,15 @@
     flex: 100% 0 0 ;
   }
 
+  .response {
+    display: block;
+  }
+
   .response-image{
     display: none;
   }
 
-  .response-text {
-    display: block;
-  }
+
   .response .slider {
     flex:  0 0 100%;
   }
