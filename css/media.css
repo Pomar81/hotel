@@ -99,12 +99,15 @@
 
   /***** MAIN *****************/
 
+  .promo-slider {
+    display: none;
+  }
   .room-overview .gallery__item {
-    flex: 100% 0 0;
+    flex:  0 0 100%;
   }
-  .room-overview .image-fluid {
+ /* .room-overview .image-fluid {
     width: 100%;
-  }
+  }*/
 
   .features .card {
     flex: 100% 0 0 ;
@@ -115,10 +118,10 @@
   }
 
   .response-text {
-    flex: 0  0 100%;
+    display: block;
   }
   .response .slider {
-    flex: 100% 0 0;
+    flex:  0 0 100%;
   }
 
 
