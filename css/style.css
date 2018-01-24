@@ -119,6 +119,10 @@ body {
   text-decoration: underline;
 }
 
+.c-link {
+  border: 2px solid transparent;
+
+}
 .c-link:focus,
 .s-focused{
   outline-color: burlywood;
