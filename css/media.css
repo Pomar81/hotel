@@ -132,6 +132,6 @@
     display: none;
   }
   .page-footer__col_1_3 {
-    flex: 0 0 50%;
+    width: 50%;
   }
 }
