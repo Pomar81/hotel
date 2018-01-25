@@ -449,13 +449,14 @@ body {
   justify-content: flex-start;
   align-items: stretch;
 
+
   font-family: "Merriweather", "Arial", serif;
 }
 
 .response-text {
   width: 50%;
   background-color: #686B86;
-  padding: 8%;
+  padding: 50px 8%;
 
 }
 
