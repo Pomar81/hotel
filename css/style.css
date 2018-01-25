@@ -607,8 +607,12 @@ body {
   padding: 15px;
   min-width: 300px;
   min-height: 300px;
+  max-width: 70vw;
 }
 
+.img-gallery__inner.image-fluid {
+  max-height: 90vh;
+}
 
 .img-modal__close {
   position: absolute;
