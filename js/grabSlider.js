@@ -2,10 +2,16 @@ function createGrabSlider(slider) {
 
   function fixStartX(event) {
     event.preventDefault();
+    if (event.type==="touchstart")
+    {
+      mouseStartX = event.targetTouches[0].clientX;
+      event.target.addEventListener("touchmove", moveSlide, false);
+    } else {
+      mouseStartX = event.clientX;
+    }
     var slideSize = inner.querySelector('.slider__item').offsetWidth;
     var windowSize = Math.round(inner.offsetWidth / slideSize);
     maxOffsetLeft = (windowSize - count) * slideSize;
-    mouseStartX = event.clientX;
     inner.style.cursor = "grabbing";
     startOffset = -position * slideSize;
     state = 1;
@@ -13,9 +19,15 @@ function createGrabSlider(slider) {
 
   function moveSlide(event) {
     var distance;
-    var translateStr;
+    var mouseX;
+    if (event.type==="touchmove")
+    {
+      mouseX = event.targetTouches[0].clientX;
+    } else {
+      mouseX = event.clientX;
+    }
     if (state === 1) {
-      distance = event.clientX - mouseStartX + startOffset;
+      distance = mouseX - mouseStartX + startOffset;
       if (distance < 0)
         endOffset = Math.max(maxOffsetLeft, distance)
       else {
@@ -28,6 +40,11 @@ function createGrabSlider(slider) {
   }
 
   function fixEndX(event) {
+    if (event.type==="touchend")
+    {
+
+      event.target.removeEventListener("touchmove", moveSlide, false);
+    }
     if (state === 1) {
       var slideSize = inner.querySelector('.slider__item').offsetWidth;
       position = Math.round(-endOffset / slideSize);
@@ -47,6 +64,10 @@ function createGrabSlider(slider) {
     inner.style.webkitTransform = "translateX(" + endOffset + "px)";
   }
 
+
+
+
+
   if (!slider ||
       !(slider instanceof HTMLElement) ||
       !slider.classList.contains("slider") ||
@@ -54,6 +75,7 @@ function createGrabSlider(slider) {
     console.error("This is not a slider");
     return;
   }
+
 
   var inner = slider.querySelector(".slider__inner");
   var count = inner.getElementsByClassName("slider__item").length;
@@ -66,8 +88,11 @@ function createGrabSlider(slider) {
 
 
   inner.addEventListener("mousedown", fixStartX, false);
+  inner.addEventListener("touchstart", fixStartX, false);
   window.addEventListener("mousemove", moveSlide, false);
   window.addEventListener("mouseup", fixEndX, false);
+  window.addEventListener("touchend", fixEndX, false);
   window.addEventListener("resize", update, false);
+
 
 }
