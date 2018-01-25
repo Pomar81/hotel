@@ -567,7 +567,7 @@ body {
 }
 
 .img-gallery__item {
-  width: 300px;
+  max-width: 300px;
   background-color: #d1b069;
   text-align: center;
   border: 1px solid black;
