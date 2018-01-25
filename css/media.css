@@ -1,9 +1,11 @@
 @media screen and (max-width: 1024px) {
   .page-header__logo.c-link {
     margin-right: 0;
+    margin-bottom: 10px;
   }
   .page-header__nav{
     justify-content: center;
+    flex-direction: column;
   }
   /***** MAIN *****************/
   .room-overview .gallery__item {
@@ -22,9 +24,9 @@
     padding-bottom: 0;
   }
 
-  .page-header__logo {
+  .page-header__logo.c-link {
     align-self: flex-start;
-
+    margin-bottom: 0;
   }
 
 

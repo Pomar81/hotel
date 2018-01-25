@@ -87,7 +87,8 @@ body {
 .page-header__logo.c-link {
   margin-right: auto;
   max-width: 180px;
-  padding: 0 0 0 10px;
+  padding: 0;
+  margin-left: 10px;
 }
 
 /*********page menu *************/
@@ -406,7 +407,7 @@ body {
 .features .card__item::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 25px;
   left: 0;
   display: inline-block;
   padding: 60px 40px;
@@ -432,10 +433,12 @@ body {
 }
 
 .features .card__content {
+  margin: 0 0 40px;
+
   text-align: justify;
   color: #63687b;
   font-size: 14px;
-  margin: 0 0 40px;
+  line-height: 1.8;
 }
 
 /********** response ***************/
