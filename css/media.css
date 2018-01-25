@@ -110,7 +110,7 @@
   }*/
 
   .features .card {
-    flex: 100% 0 0 ;
+    flex:  0 0 100%;
   }
 
 
@@ -131,14 +131,15 @@
     flex:  0 0 100%;
   }
 
-
-
-  .footer-news {
-    display: none;
+  .page-footer__inner {
+    flex-flow: column nowrap;
+    align-items: stretch;
   }
+
   .page-footer__col_1_3 {
-    width: 50%;
-    flex: none;
+    /*width: 50%;*/
+    flex-basis: 100%;
     font-size: 13px;
+    margin-bottom: 10px;
   }
 }
