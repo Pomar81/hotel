@@ -22,6 +22,7 @@ function createGrabSlider(slider) {
         endOffset = Math.min(0, distance);
       }
       inner.style.transform = "translateX(" + endOffset + "px)";
+      inner.style.webkitTransform = "translateX(" + endOffset + "px)";
     }
 
   }
@@ -32,6 +33,7 @@ function createGrabSlider(slider) {
       position = Math.round(-endOffset / slideSize);
       endOffset = -position * slideSize;
       inner.style.transform = "translateX(" + endOffset + "px)";
+      inner.style.webkitTransform = "translateX(" + endOffset + "px)";
       console.log("position: " + position);
       inner.style.cursor = "";
       state = 0;
@@ -42,6 +44,7 @@ function createGrabSlider(slider) {
     var slideSize = inner.querySelector('.slider__item').offsetWidth;
     endOffset = -position * slideSize;
     inner.style.transform = "translateX(" + endOffset + "px)";
+    inner.style.webkitTransform = "translateX(" + endOffset + "px)";
   }
 
   if (!slider ||
