@@ -113,8 +113,6 @@
     flex:  0 0 100%;
   }
 
-
-
   .response-image {
     display: none;
   }
@@ -126,11 +124,14 @@
     font-size: 14px;
   }
 
-
   .response .slider {
     flex:  0 0 100%;
   }
 
+  .promo h1 {
+    font-size: 32px;
+  }
+  /***** FOOTER *****************/
   .page-footer__inner {
     flex-flow: column nowrap;
     align-items: stretch;
