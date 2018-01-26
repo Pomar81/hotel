@@ -610,7 +610,7 @@ body {
   max-width: 70vw;
 }
 
-.img-gallery__inner.image-fluid {
+.img-gallery__inner .image-fluid {
   max-height: 90vh;
 }
 
@@ -650,7 +650,8 @@ body {
 }
 
 .promo.contacts {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #565978;
 }
 /********************************/
 /********* MAP ******************/
