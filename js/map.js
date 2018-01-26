@@ -8,12 +8,13 @@ function initMap() {
 
   });
   var infowindow = new google.maps.InfoWindow({
-    content: "<img src='img/logo_new.png' alt='hotel'>"
+    content: "<img src='img/logo_new.png' class='image-map image-fluid' alt='p-hotel'>"
   });
   var marker = new google.maps.Marker({
     position: uluru,
     map: map,
-    title: "P-hotel"
+    title: "P-hotel",
+    label: "H"
 
   });
   infowindow.open(map, marker);
