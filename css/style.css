@@ -643,16 +643,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
 
   border: 1px solid transparent;
+  border-bottom: 2px solid #565978;
   background: url("../img/slider_img2.jpg") center/cover no-repeat;
 }
 
-.promo.contacts {
-  margin-bottom: 0px;
-  border-bottom: 2px solid #565978;
-}
+
 /********************************/
 /********* MAP ******************/
 /********************************/
