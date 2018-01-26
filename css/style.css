@@ -20,6 +20,12 @@ body {
   font-size: 14px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", "Arial", serif;
+}
+
 /***** sticky footer *******/
 .page {
   display: flex;
@@ -173,12 +179,7 @@ body {
   white-space: nowrap;
 }
 
-/*.c-menu__item:hover,
-.c-menu-dropdown__item:hover {
-  color: burlywood;
-  //background-color: #565978;
-  border: 2px solid burlywood;
-}*/
+
 
 .c-menu-dropdown {
   position: absolute;
@@ -208,9 +209,7 @@ body {
   border-left: 2px solid gray;
 }
 
-/*.c-menu-dropdown:focus {*/
-/*display: block;*/
-/*}*/
+
 
 .c-menu__burger-toggle {
   display: none;
@@ -649,15 +648,82 @@ body {
   background: url("../img/slider_img2.jpg") center/cover no-repeat;
 }
 
+/**********************************/
+/********* CONTACTS PAGE *********/
+/*********************************/
 
-/********************************/
+
 /********* MAP ******************/
-/********************************/
+
 
 #map {
   width: 100%;
   min-height: 500px;
   background-color: grey;
+}
+
+.image-map {
+  width: 100px;
+}
+
+/************CONTACTS DATA **************/
+.contacts {
+  display: flex;
+  flex-flow: column  wrap;
+  align-items: center;
+}
+
+.contacts h2 {
+  color: #2e357b;
+  margin: 10px 0;
+}
+.response-form {
+  width: 75%;
+}
+
+.form-col_half {
+  display: inline-block;
+  width: 50%;
+}
+
+.form-col_half:first-child {
+  margin-right: -4px;
+}
+
+.response-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.response-form input,
+.response-form textarea{
+  width: 95%;
+  margin: 0 0 10px 0;
+  padding: 2px 5px;
+  border: 1px solid #cccccc;
+  outline: 0;
+
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.response-form input:NOT([type="submit"]):focus {
+  border-color: #686B86;
+}
+
+.response-form input[type="submit"] {
+  width: 100px;
+
+  color: white;
+  background-color: black;
+}
+
+.response-form input {
+  height: 36px;
+}
+
+.response-form textarea {
+  width: 97.5%;
 }
 
 

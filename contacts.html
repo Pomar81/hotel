@@ -43,14 +43,21 @@
     <div id="map"></div>
 
     <section class="contacts container">
-        <div class="col-left">
+
             <h2>Get in touch with us now!</h2>
             <span>Feel free to contact us and get more information</span>
-            <form action="#" method="post">
-
+            <form class="response-form" action="#" method="post">
+                <div class="form-col_half">
+                    <label for="customer-name">Your name</label>
+                    <input type="text" name="name" id="customer-name" placeholder="customer" required></div>
+                <div class="form-col_half">
+                    <label for="customer-email">Your Email</label>
+                    <input type="email" name="email" id="customer-email" placeholder="example@example.com" required>
+                </div>
+                <label for="customer-msg">Your message</label>
+                <textarea name="message" id="customer-msg"  rows="20"></textarea>
+                <input type="submit" value="Submit">
             </form>
-        </div>
-        <div class="col-right"></div>
     </section>
 </main>
 <footer class="page-footer">
@@ -105,7 +112,7 @@
 <script src="js/menu.js"></script>
 <script src="js/map.js"></script>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS1SSQDXm2-2ozSKG2dqFLKZh_T-_d7tM&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTmHY3DAaeDuWO3SPWS0fY7BANr1tyEx0&callback=initMap">
 </script>
 <script src="js/p-contacts.js"></script>
 </body>

@@ -133,6 +133,19 @@
   .promo h1 {
     font-size: 32px;
   }
+
+  /**********************************/
+  /********* CONTACTS PAGE *********/
+  /*********************************/
+
+  /******* CONTACTS DATA *********/
+
+  .form-col_half {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+  }
+
   /***** FOOTER *****************/
   .page-footer__inner {
     flex-flow: column nowrap;
