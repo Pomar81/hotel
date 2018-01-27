@@ -8,5 +8,5 @@ document.addEventListener('DOMContentLoaded', function(){
   createGrabSlider(document.querySelector('.room-overview .gallery'));
   createGrabSlider(document.querySelector('.response .slider'));
   createAutoSlider(document.querySelector('.promo-slider .slider'));
-});
+}, false);
 

@@ -4,5 +4,5 @@ document.addEventListener('DOMContentLoaded', function() {
     pageNav.init();
     pageNav.fixTop();
   }
-});
+}, false);
 
