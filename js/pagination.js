@@ -5,10 +5,10 @@ function Pagination(elm, data) {
   this.cb = data.cb || null;
   this.elm = elm;
   this.page = 1;
-  this.init();
+  this._init();
 }
 
-Pagination.prototype.init = function() {
+Pagination.prototype._init = function() {
   if (this.elm) {
     this.elm.innerHTML =
       '<a>&#9668;</a>' +  // previous
