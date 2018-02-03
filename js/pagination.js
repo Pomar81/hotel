@@ -2,7 +2,7 @@ function Pagination(elm, data) {
   data = data || {};
   this.size = data.size || 10;
   this.step = data.step || 2;
-  this.cb = data.cb || null;
+  this._cb = data._cb || null;
   this.elm = elm;
   this.page = 1;
   this._init();
@@ -18,11 +18,11 @@ Pagination.prototype._init = function() {
     a[0].addEventListener('click', this._prev.bind(this), false);
     a[1].addEventListener('click', this._next.bind(this), false);
     this._calc();
-    this.cb(this.page);
+    this._cb(this.page);
   }
 
 }
-
+// calculate items to show and render them
 Pagination.prototype._calc = function() {
   if (this.size < this.step * 2 + 1) {
     this._render(1, this.size);
@@ -53,7 +53,7 @@ Pagination.prototype._next = function() {
   if (this.page < this.size) {
     this.page++;
     this._calc();
-    this.cb(this.page);
+    this._cb(this.page);
   }
 }
 
@@ -61,7 +61,7 @@ Pagination.prototype._prev = function() {
   if (this.page > 1) {
     this.page--;
     this._calc();
-    this.cb(this.page);
+    this._cb(this.page);
   }
 }
 
@@ -70,7 +70,7 @@ Pagination.prototype._click = function(evt) {
   if (newPage !== this.page) {
     this.page = newPage;
     this._calc();
-    this.cb(this.page);
+    this._cb(this.page);
   }
 
 }

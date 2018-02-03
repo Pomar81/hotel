@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   new Pagination(elm,
     {
-      cb: getRooms
+      _cb: getRooms
     });
 }, false);
 
