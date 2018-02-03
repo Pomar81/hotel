@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Booking</title>
+    <title>Rooms</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -16,8 +15,7 @@
     <div class="page-header__inner">
         <nav class="page-header__nav c-menu page_style">
 
-            <a class="page-header__logo c-link" href="index.html"><img class="logo__img image-fluid"
-                                                                       src="img/logo_new.png"
+            <a class="page-header__logo c-link" href="index.html"><img class="logo__img image-fluid" src="img/logo_new.png"
                                                                        alt="royal hotel"
                                                                        width="242" height="66"></a>
 
@@ -26,14 +24,15 @@
             <label for="page-burger" class="c-menu__burger-btn"></label>
             <ul class="menu__list">
                 <li class="c-menu__item"><a class="c-link" href="#">Explore</a></li>
-                <li class="c-menu__item"><a class="c-link  c-menu__btn" href="#">Rooms</a>
+                <li class="c-menu__item"><a class="c-link c-menu__btn" href="#">Rooms</a>
                     <ul class="c-menu-dropdown page_style">
-                        <li class="c-menu-dropdown__item page_style"><a href="" class="c-link">Guest rooms</a></li>
-                        <li class="c-menu-dropdown__item page_style"><a href="" class="c-link">Suites</a></li>
+                        <li class="c-menu-dropdown__item page_style"><a href="rooms.html" class="c-link">Overview</a></li>
+                        <li class="c-menu-dropdown__item page_style"><a href="#" class="c-link">Guest rooms</a></li>
+                        <li class="c-menu-dropdown__item page_style"><a href="#" class="c-link">Suites</a></li>
                     </ul>
                 </li>
-                <li class="c-menu__item"><a class="c-link s-active">Booking</a></li>
-                <li class="c-menu__item"><a class="c-link" href="news.html">News</a></li>
+                <li class="c-menu__item"><a class="c-link" href="#">Booking</a></li>
+                <li class="c-menu__item"><a class="c-link s-active">News</a></li>
                 <li class="c-menu__item"><a class="c-link" href="gallery.html">Gallery</a></li>
                 <li class="c-menu__item"><a class="c-link" href="contacts.html">Contacts</a></li>
             </ul>
@@ -42,49 +41,12 @@
 </header>
 <main class="page__inner">
     <div class="promo">
-        <h1>Booking</h1>
+        <h1>News</h1>
     </div>
-
-    <section class="booking container">
-        <form class="booking-form" action="#" method="post">
-            <div class="form-col_third">
-                <label for="guestName">Your Name</label>
-                <input type="text" id="guestName" name="guestName">
-            </div>
-            <div class="form-col_third">
-                <label for="guestEmail">Your Email</label>
-                <input type="email" id="guestEmail" name="guestEmail">
-            </div>
-            <div class="form-col_third">
-                <label for="guestNum">Number of Guests</label>
-                <select id="guestNum" name="guestNum" required>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-col_third">
-                <label for="fromDate">Check In Date</label>
-                <input type="text" id="fromDate" name="fromDate">
-            </div>
-            <div class="form-col_third">
-                <label for="toDate">Check Out Date</label>
-                <input type="text" id="toDate" name="toDate">
-            </div>
-            <div class="form-col_third">
-                <label for="roomType">Select Room</label>
-                <select id="roomType" name="roomType" required>
-                    <option>Single</option>
-                    <option>Double</option>
-                    <option>Deluxe</option>
-                </select>
-            </div>
-            <input type="submit" value="send">
-        </form>
-    </section>
 </main>
+    <section class="news-view container">
+        <div class="pagination"></div>
+    </section>
 <footer class="page-footer">
     <div class="page-footer__inner container">
         <div class="page-footer__col_1_3 footer-aboutUs">
@@ -135,7 +97,6 @@
 
 </footer>
 <script src="js/menu.js"></script>
-<script src="js/jquery-1.12.4.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/p-booking.js"></script>
+<script src="js/pagination.js"></script>
+<script src="js/p-news.js"></script>
 </html>
