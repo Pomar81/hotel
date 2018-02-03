@@ -1,4 +1,7 @@
+
 function ImgGallery(param) {
+  "use strict";
+
   this._params = param || {};
   this._data = null;
   this._colNum = 4;
@@ -8,19 +11,20 @@ function ImgGallery(param) {
 }
 
 ImgGallery.prototype.init = function () {
+  "use strict";
   var that = this;
   var xhr = new XMLHttpRequest();
-  var url = "data/gallery.json"
+  var url = "data/gallery.json";
   xhr.overrideMimeType("application/json");
   xhr.open("GET", url, true);
   xhr.onreadystatechange = function () {
-    if (xhr.readyState == 4)
-      if (xhr.status == "200") {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
 
         try {
           that._data = JSON.parse(xhr.responseText);
         } catch (e) {
-          console.error("gallery data are invalid")
+          console.error("gallery data are invalid");
           that._data = null;
         }
         if (that._data) {
@@ -33,11 +37,13 @@ ImgGallery.prototype.init = function () {
       else {
         console.error("Can't get gallery data: " + xhr.status + " " + xhr.statusText);
       }
+    }
   };
-  xhr.send(null);
-}
+  xhr.send();
+};
 
 ImgGallery.prototype._renderCommon = function () {
+  "use strict";
 
   if (this._params.filterArr) {
     // create filters container
@@ -86,9 +92,11 @@ ImgGallery.prototype._renderCommon = function () {
 
   window.addEventListener("keydown", this._closeModal.bind(modal), false);
   document.body.insertBefore(modal, document.querySelector(".page-footer"));
-}
+};
 
 ImgGallery.prototype._renderImgs = function (filter) {
+  "use strict";
+
   var container = document.querySelector(".img-gallery__items");
   container.innerHTML = "";
   // delete all images
@@ -113,14 +121,16 @@ ImgGallery.prototype._renderImgs = function (filter) {
       container.appendChild(imgDiv);
     }
   }
-}
+};
 
 ImgGallery.prototype._rearrangeImgs = function () {
+  "use strict";
 
   var container = document.querySelector(".img-gallery__items");
   var items = container.querySelectorAll(".img-gallery__item");
-  if (!items.length)
+  if (!items.length) {
     return;
+  }
   this._colNum = Math.trunc(container.clientWidth / items[0].offsetWidth);
   container.innerHTML = "";
 
@@ -139,11 +149,13 @@ ImgGallery.prototype._rearrangeImgs = function () {
       j = 0;
     }
   }
-}
+};
 
 // ***** Event handlers ****
 
 ImgGallery.prototype._resize = function () {
+  "use strict";
+
   var container = document.querySelector(".img-gallery__items");
   var item = container.querySelector(".img-gallery__item");
   if (item) {
@@ -151,11 +163,13 @@ ImgGallery.prototype._resize = function () {
       this._rearrangeImgs();
     }
   }
-}
+};
 ImgGallery.prototype._throttle = function (f, delay) {
+  "use strict";
+
   var execEn = true;
   var execAfter = false;
-  var agrsMem = null;
+  var argsMem = null;
   var that = this;
   var thatMem = null;
 
@@ -172,7 +186,7 @@ ImgGallery.prototype._throttle = function (f, delay) {
       setTimeout(function () {
         execEn = true;
         if (execAfter) {
-          delayedExec.apply(thatMem, agrsMem);
+          delayedExec.apply(thatMem, argsMem);
           thatMem = argsMem = null;
           execAfter = false;
         }
@@ -181,10 +195,12 @@ ImgGallery.prototype._throttle = function (f, delay) {
   }
 
   return delayedExec;
-}
+};
 
 //
 ImgGallery.prototype._filterWrapper = function (filter) {
+  "use strict";
+
   var that = this;
   return function (event) {
     console.log("test");
@@ -192,15 +208,21 @@ ImgGallery.prototype._filterWrapper = function (filter) {
     ImgGallery.prototype._rearrangeImgs.call(that);
   };
 
-}
+};
 
 ImgGallery.prototype._closeModal = function (event) {
+  "use strict";
+
   if ((event.type === "keydown" && event.keyCode === 27) ||
-    (event.type === "click" && ((event.target === this) || event.target === this.querySelector(".img-modal__close"))))
+    (event.type === "click" && ((event.target === this) || event.target === this.querySelector(".img-modal__close")))){
+
     this.style.display = "none";
-}
+  }
+};
 
 ImgGallery.prototype._selectImage = function (event) {
+  "use strict";
+
   var modal = document.querySelector(".img-modal");
   if (modal) {
     var modalImg = modal.getElementsByTagName("img")[0];
@@ -208,7 +230,7 @@ ImgGallery.prototype._selectImage = function (event) {
     modalImg.nextElementSibling.innerHTML = this.nextElementSibling.innerHTML;
     modal.style.display = "";
   }
-}
+};
 
 
 // implementation

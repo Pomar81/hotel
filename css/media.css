@@ -146,6 +146,9 @@
     margin-right: 0;
   }
 
+  .response-form {
+    width: 90%;
+  }
   /***** FOOTER *****************/
   .page-footer__inner {
     flex-flow: column nowrap;
@@ -157,5 +160,13 @@
     flex-basis: 100%;
     font-size: 13px;
     margin-bottom: 10px;
+  }
+
+  /******************************************/
+  /************* BOOKING PAGE ***************/
+  /******************************************/
+
+  .form-col_third {
+    flex: 0 0 100%;
   }
 }
