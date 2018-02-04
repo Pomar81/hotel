@@ -65,9 +65,6 @@ function createGrabSlider(slider) {
   }
 
 
-
-
-
   if (!slider ||
       !(slider instanceof HTMLElement) ||
       !slider.classList.contains("slider") ||
